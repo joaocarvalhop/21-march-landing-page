@@ -1,0 +1,29 @@
+@use 'hero';
+@use 'about';
+@use 'history';
+@use 'participate';
+@use 'message';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1023px) {
+        width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        width: 78%;
+    }
+}

@@ -1,0 +1,58 @@
+.history {
+    background: linear-gradient(
+        0deg,
+        rgba(9, 9, 9, 1) 0%,
+        rgba(102, 102, 102, 1) 100%
+    );
+    padding: 1px;
+    margin-top: -1px;
+
+    .conteiner {
+        background-color: red;
+    }
+
+    h2 {
+        font-size: 1.65em;
+        margin-top: 36px;
+    }
+
+    &__list {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        &__item {
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        &__item:last-child {
+            margin-bottom: 53px;
+        }
+
+        &__image {
+            max-width: 600px;
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        h2 {
+            font-size: 1.25em;
+            margin-top: 36px;
+        }
+
+        &__list {
+            &__item {
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
